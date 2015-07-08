@@ -1,0 +1,49 @@
+{
+
+    "info": {
+        "title": "Example Song Name",
+        "artist": "Example Artist",
+        "tracks": {
+
+            "Track0": "Track 1.mp3",
+            "Track1": "Track 2.mp3",
+            "Track2": "Track 3.mp3",
+            "Track3": "Track 4.mp3",
+            "Track4": "Track 5.mp3",
+            "Track5": "Track 6.mp3",
+            "Track6": "Track 7.mp3",
+            "Track7": "Track 8.mp3"
+
+        }
+
+
+    },
+
+    "order": {
+
+        "speedup": {
+            "Pace0": 0,
+            "Pace1": 1,
+            "Pace2": 2,
+            "Pace3": 3,
+            "Pace4": 4,
+            "Pace5": 5,
+            "Pace6": 6,
+            "Pace7": 7
+        },
+        "slowdown": {
+            "Pace0": 7,
+            "Pace1": 6,
+            "Pace2": 5,
+            "Pace3": 4,
+            "Pace4": 3,
+            "Pace5": 2,
+            "Pace6": 1,
+            "Pace7": 0
+        }
+
+
+    }
+
+
+}
