@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="WebAudio.css" rel="stylesheet">
+    <script src="WebAudio.js"></script>
+
+</head>
+
+<body>
+
+    <h2>WEBAPP VERSION 2</h2>
+    <h3>Created by Eamon Buckley</h3>
+    <h1 id="songTitle">MUSIC PLAYER</h1>
+    <h4 id="songArtist"></h4>
+    <select id="loadSel">
+        <!--Track References go here-->
+        <option value="scrapyard/">Scrapyard</option>
+        <option value="heist5/">Heist 5</option>
+        <option value="debunked/">Debunked</option>
+        <option value="burningbar/">Burning Bar</option>
+        <option value="vacuum/">Vacuum</option>
+
+    </select>
+    <button id="preload" onclick="songLoader()">LOAD SONG</button>
+    <div id="player">
+
+
+
+    </div>
+
+    
+    <button onclick="toggleTrax()">SHOW/HIDE Track Volume Meters</button>
+    <br />
+    <input disabled type="range" id="intensity" max="8" min="1" value="1" name="meter" onchange="meterChange(this.value)" />
+    <label for="meter">Intensity</label>
+    <br />
+    
+    
+    <input disabled id="trackCounter" type="text" readonly size="2" value="0" class="center"/>
+    <label for="rest">Tracks</label>
+    <br />
+    <input disabled id="zoneSize" type="text" readonly size="2" value="0" class="center"/>
+    <label for="rest">Track Zone Size ((Max HR / Resting HR)/Tracks)</label>
+    <br />
+    
+    <!--Placeholders for smartwatch API data-->
+    <input disabled type="number" name="rest" value="68" min="60" max="85" id="restNum" onchange="heartCalcs();">
+    <label for="rest"> Resting Heart Rate</label>
+    <br />
+    <input disabled type="number" name="full" value="194" min="100" max="194" id="fullNum" onchange="heartCalcs();">
+    <label for="full"> Full Exertion Heart Rate</label>
+    <br />
+    <input disabled type="number" name="actual" value="68" min="68" max="194" id="actNum" onchange="HeartRate(this.value)"> 
+    <label for="actual"> Actual Heart Rate</label>
+
+</body>
+
+</html>

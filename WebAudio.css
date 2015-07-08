@@ -1,0 +1,34 @@
+#player {
+    transform: rotate(270deg);
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#player > input {
+    display: block;
+    margin: 0;
+    margin-top: 5px;
+}
+
+body {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
+
+.hidden{
+
+    visibility: hidden;
+    
+}
+.center {
+    text-align: center;
+}
